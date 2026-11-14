@@ -1,14 +1,14 @@
+#include "func.h"
+
 #include <iostream>
-#include <memory>
 
 int main()
 {
-    std::unique_ptr<int> ptr = std::make_unique<int>(100);
-    std::cout << *ptr << "\n";
-    *ptr = 200;
-    std::cout << *ptr << "\n";
-
-    std::cout << "Hello World!";
+    for (int i = 1; i <= 100; i++)
+    {
+        hello_world();
+        task_wait(500);
+    }
 
     return 0;
 }
