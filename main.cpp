@@ -8,5 +8,7 @@ int main()
     *ptr = 200;
     std::cout << *ptr << "\n";
 
+    std::cout << "Hello World!";
+
     return 0;
 }
